@@ -1,0 +1,70 @@
+.tile {
+    position: absolute;
+    top: 164px;
+    left: 96px;
+}
+
+.tile-today {
+    background-color: #000;
+    color: #ffffff;
+    border: 1px solid #220001;
+}
+
+.tile-today .front {
+    transition: all 1.5s ease-in-out;
+    transform: perspective(1500px) rotateY(0deg);
+    transform-origin: 0% 0%;
+    backface-visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    padding: 0 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Flip the tile when hovered */
+
+.tile-animation:hover .front {
+    transform: perspective(1500px) rotateY(-160deg);
+    transform-origin: 0% 0%;
+}
+
+.tile-today, .front, .back {
+    width: 120px;
+    height: 120px;
+}
+
+.flipper {
+    position: relative;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Front Tile - placed above back */
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.4) 100%), url(IMG/background.jpg);
+    /* background-color: #d5392c; */
+    background-position: 0px 0px, -424.5px -240px;
+}
+
+/* Back - initially hidden Tile */
+
+.back {
+    background-color: #000;
+}
+
+.back img {
+    width: 120px;
+    height: 120px;
+}
