@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+
+.h1 {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.door1 {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    background-color:  sandybrown;
+}
+
+.presnt1 {
+    position: absolute;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    background-color: sandybrown;
+}
+
+.d-none {
+    display: none;
+}
+
+.doorbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin-left: 64px;
+    margin-top: 42px;
+}
+
+.firstdiv{
+    display: flex;
+    flex-wrap: wrap;
+}
