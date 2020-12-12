@@ -60,4 +60,18 @@ body {
     flex-flow: wrap;
 }
 
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    justify-content: right;
+    color: white;
+    text-shadow: red;
+    font-size: 1.5em;
+    margin-top: 64px;
+    margin-bottom: 16px;
+    background-color: rgba(169, 169, 169, 0.55);
+}
+
 

@@ -32,7 +32,7 @@ function setdoor2() {
             </div>
             <div class="back">
                 <img src="IMG/giftbg.jpg" alt="">
-                <a class="link-text" href="https://www.google.de">HAPPY</a>
+                <a class="link-text" href="https://www.youtube.com/watch?v=y3SYZUPt1E4">HAPPY</a>
             </div>
         </div>
     </div>`;
